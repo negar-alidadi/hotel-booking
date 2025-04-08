@@ -21,4 +21,5 @@ public class BookingDTO {
     private LocalDate checkOut;
     private Double totalPrice;
     private BookingStatus status;
+    private String bookingReference;
 }

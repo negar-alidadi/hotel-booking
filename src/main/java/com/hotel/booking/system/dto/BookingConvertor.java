@@ -4,6 +4,7 @@ import com.hotel.booking.system.entity.Booking;
 import com.hotel.booking.system.entity.Room;
 
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 public class BookingConvertor {
@@ -18,7 +19,8 @@ public class BookingConvertor {
                 booking.getCheckIn(),
                 booking.getCheckOut(),
                 booking.getTotalPrice(),
-                booking.getStatus()
+                booking.getStatus(),
+                booking.getBookingReference()
                 );
         return bookingDTO;
     }
@@ -31,7 +33,8 @@ public class BookingConvertor {
                 bookingDTO.getCheckIn(),
                 bookingDTO.getCheckOut(),
                 bookingDTO.getTotalPrice(),
-                bookingDTO.getStatus()
+                bookingDTO.getStatus(),
+                bookingDTO.getBookingReference()
         );
         return booking;
     }
